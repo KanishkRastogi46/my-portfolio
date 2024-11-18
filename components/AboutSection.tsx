@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
         <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-[90vh] gap-6 p-12">
             <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center items-center">
                 <Image 
-                    src="https://drive.google.com/uc?id=1TBEjJjNWlH0ZEWi7N2EvvFCNQUSMkvg1" 
+                    src="/images/portfolio-img.jpg" 
                     alt="Your Name" 
                     width={500} 
                     height={500} 
