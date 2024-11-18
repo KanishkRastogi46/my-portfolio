@@ -12,6 +12,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 import { Meteors } from "@/components/ui/meteors";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Link from "next/link"
 
 export default function ProjectSection() {
@@ -64,65 +65,17 @@ export default function ProjectSection() {
     return (
         <>
             <HeroHighlight>
-                <h2 className="text-3xl font-bold mb-4 text-center">Projects</h2>
-                <section id="projects" className="flex flex-col items-center justify-center min-h-screen p-12">
-                    <div className="mx-auto max-w-xs">
-                        <Carousel setApi={setApi} className="w-full max-w-xs">
-                            <CarouselContent>
-                            {projects.map((project , index) => (
-                                <CarouselItem key={index}>
-                                <Card>
-                                    <CardContent className="h-full w-full flex aspect-square items-center justify-center p-6">
-                                    {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
-                                    <div className=" w-full relative max-w-xs">
-                                        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-violet-500 to-blue-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
-                                        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-                                        <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
-                                            <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            className="h-2 w-2 text-gray-300"
-                                            >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M4.5 4.5l15 15m0 0V8.25m0 11.25H8.25"
-                                            />
-                                            </svg>
-                                        </div>
-                                
-                                        <h1 className="font-bold text-xl text-white mb-4 relative z-50">
-                                            {project.projectName}
-                                        </h1>
-                                
-                                        <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
-                                            {project.description}
-                                        </p>
-                                        <Link 
-                                            href={project.link}
-                                            target='_blank'
-                                        >
-                                            <button className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300 capitalize">
-                                                link
-                                            </button>
-                                        </Link>
-                                        {/* Meaty part - Meteor effect */}
-                                        <Meteors number={20} />
-                                        </div>
-                                    </div>
-                                    </CardContent>
-                                </Card>
-                                </CarouselItem>
-                            ))}
-                            </CarouselContent>
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                        
+                <h2 className="text-3xl font-bold mb-4 text-center">My Projects</h2>
+                <section id="projects" className="flex flex-col items-center justify-center min-h-[90vh] p-12">
+                    <div className="h-auto rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+                        <InfiniteMovingCards
+                            items={projects}
+                            direction="right"
+                            speed="slow"
+                        />
                     </div>
+ 
+
                     <h2 className="text-3xl font-bold mb-4 text-center mt-4">
                         For more info visit my{" "}
                         <Link 

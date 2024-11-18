@@ -8,26 +8,23 @@ const AboutSection: React.FC = () => {
   return (
     <HeroHighlight>
         <h2 className="text-3xl font-bold mb-4 text-center">About Me</h2>
-        <section id="about" className="flex flex-col md:flex-row items-center justify-between min-h-screen p-12">
-            <div className="md:w-1/2 mt-8 md:mt-0">
-            <Image 
-                src="https://drive.google.com/uc?id=1TBEjJjNWlH0ZEWi7N2EvvFCNQUSMkvg1" 
-                alt="Your Name" 
-                width={500} 
-                height={500} 
-                className="w-[60%] h-auto rounded-full shadow-md" 
-                priority
-            />
+        <section id="about" className="flex flex-col md:flex-row items-center justify-center min-h-[90vh] gap-6 p-12">
+            <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center items-center">
+                <Image 
+                    src="https://drive.google.com/uc?id=1TBEjJjNWlH0ZEWi7N2EvvFCNQUSMkvg1" 
+                    alt="Your Name" 
+                    width={500} 
+                    height={500} 
+                    className="w-[60%] h-auto rounded-full shadow-md" 
+                    priority
+                />
             </div>
-            <div className="md:w-1/2 md:pr-8 dark:text-white text-black">
+            <div className="md:w-1/2 md:pr-8 dark:text-white text-black flex flex-col items-center justify-center">
                 <p className="text-lg mb-4">
-                Hello! I'm <span className="dark:text-violet-500 text-violet-700">Kanishk Rastogi</span> , a passionate developer with experience in building web applications.
-                I have a deep interest in web scraping, data analysis, and creating intuitive user interfaces.
-                My goal is to leverage my skills to build products that make a difference.
+                Hello!👋 I'm <span className="dark:text-violet-500 text-violet-700 font-bold">Kanishk Rastogi</span>, a <span className='font-bold'>Computer Science</span> student based in <span className='font-bold'>India</span> currently pursuing my B.Tech from <span className='font-bold'>Dr APJ Abdul Kalam Technical University (AKTU), Lucknow</span>. Currently I'm <span className='font-bold'>AI/ML Lead in Google Developers Group, BBDNIIT</span>.
                 </p>
                 <p className="text-lg mb-6">
-                In my spare time, I enjoy exploring new technologies, reading, and surfing across internet. I believe in continuous learning 
-                and always strive to improve myself both personally and professionally.
+                My key area of interests is <span className='font-bold'>Full Stack Development</span> and I'm also passionate about <span className='font-bold'>Data Science and Machine Learning</span> on which I'm working on these days. Technologies I'm familiar with are:- <span className='font-bold'>Node JS, Express JS React JS, Next JS, Django, Flask, MongoDB, PostgreSQL, MySQL, Numpy, Pandas, Matplotlib, Scikit-Learn, Git, BeautifulSoup</span>.
                 </p>
                 <Link 
                     href={"https://drive.google.com/file/d/1ib9eID7kgAOiPM6z-ziaSn75gl2Cs_gl/view?usp=sharing"}
