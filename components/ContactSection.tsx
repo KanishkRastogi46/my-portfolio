@@ -7,12 +7,12 @@ import { useToast } from "@/hooks/use-toast"
 import Link from "next/link"
 
 export default function ContactSection() {
-    let [email , setEmail] = useState("")
-    let [feedback , setFeedback] = useState("")
+    const [email , setEmail] = useState("")
+    const [feedback , setFeedback] = useState("")
 
     const { toast } = useToast()
 
-    let handleSubmit = function (e : any) {
+    const handleSubmit = function (e : React.MouseEvent<HTMLButtonElement>) {
         e.preventDefault()
 
         if (email.trim() === "" || feedback.trim() === "") {

@@ -2,23 +2,10 @@
 
 import React from "react"
 import { HeroHighlight } from "@/components/hero-highlight"
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel"
-import { Meteors } from "@/components/ui/meteors";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Link from "next/link"
 
 export default function ProjectSection() {
-    const [api, setApi] = React.useState<CarouselApi>()
-    const [current, setCurrent] = React.useState(0)
-    const [count, setCount] = React.useState(0)
 
     const projects = [
         {
@@ -48,19 +35,6 @@ export default function ProjectSection() {
             link : "https://github.com/KanishkRastogi46/flipkart_webscrape"
         },
     ]
-    
-    React.useEffect(() => {
-        if (!api) {
-        return
-        }
- 
-    setCount(api.scrollSnapList().length)
-    setCurrent(api.selectedScrollSnap() + 1)
- 
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1)
-    })
-    } , [api])
 
     return (
         <>
