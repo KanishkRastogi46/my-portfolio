@@ -95,7 +95,7 @@ export default function ContactSection() {
                         </Link> 
 
                         <Link 
-                            href="https://twitter.com/your-profile" 
+                            href="https://x.com/_kanishk_2503" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="block mb-4 text-lg text-black hover:text-blue-500 dark:text-white"> 

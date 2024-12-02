@@ -27,7 +27,7 @@ const AboutSection: React.FC = () => {
                 My key area of interests is <span className='font-bold'>Full Stack Development</span> and I&#39;m also passionate about <span className='font-bold'>Data Science and Machine Learning</span> on which I&#39;m working on these days. Technologies I&#39;m familiar with are:- <span className='font-bold'>Node JS, Express JS React JS, Next JS, Django, Flask, MongoDB, PostgreSQL, MySQL, Numpy, Pandas, Matplotlib, Scikit-Learn, Git, BeautifulSoup</span>.
                 </p>
                 <Link 
-                    href={"https://drive.google.com/file/d/1ib9eID7kgAOiPM6z-ziaSn75gl2Cs_gl/view?usp=sharing"}
+                    href={"https://drive.google.com/file/d/1ObucfEClcBFNHVdKFAj81e8KEVojpSdz/view?usp=sharing"}
                     target='_blank'
                 >
                     <button className="outline dark:outline-violet-400 outline-violet-700 rounded-lg p-2 capitalize dark:text-white text-black hover:bg-violet-400 ">Resume</button>

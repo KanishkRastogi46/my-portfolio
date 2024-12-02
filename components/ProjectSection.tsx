@@ -40,8 +40,8 @@ export default function ProjectSection() {
         <>
             <HeroHighlight>
                 <h2 className="text-3xl font-bold mb-4 text-center">My Projects</h2>
-                <section id="projects" className="flex flex-col items-center justify-center min-h-[90vh] p-12">
-                    <div className="h-auto rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+                <section id="projects" className="flex flex-col items-center justify-center min-h-[90vh] px-4 py-12 w-full overflow-hidden">
+                    <div className="w-full h-auto rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
                         <InfiniteMovingCards
                             items={projects}
                             direction="right"

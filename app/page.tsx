@@ -38,12 +38,9 @@ export default function Home() {
         </HeroHighlight>
 
         <AboutSection/>
-
-        <div>
-            <ProjectSection/>
+        <div className="overflow-hidden">
+            <ProjectSection/>   
         </div>
-        
-
         <ContactSection/>
     </div>
   );
